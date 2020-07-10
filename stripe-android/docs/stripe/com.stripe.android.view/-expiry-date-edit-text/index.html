@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExpiryDateEditText - stripe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">stripe</a>&nbsp;/&nbsp;<a href="../index.html">com.stripe.android.view</a>&nbsp;/&nbsp;<a href="./index.html">ExpiryDateEditText</a><br/>
+<br/>
+<h1>ExpiryDateEditText</h1>
+<code><span class="keyword">class </span><span class="identifier">ExpiryDateEditText</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-stripe-edit-text/index.html"><span class="identifier">StripeEditText</span></a></code>
+<p>An <a href="https://developer.android.com/reference/android/widget/EditText.html">EditText</a> that handles putting numbers around a central divider character.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>An <a href="https://developer.android.com/reference/android/widget/EditText.html">EditText</a> that handles putting numbers around a central divider character.</p>
+<code><span class="identifier">ExpiryDateEditText</span><span class="symbol">(</span><span class="identifier" id="com.stripe.android.view.ExpiryDateEditText$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.stripe.android.view.ExpiryDateEditText$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/attrs">attrs</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/util/AttributeSet.html"><span class="identifier">AttributeSet</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.stripe.android.view.ExpiryDateEditText$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/defStyleAttr">defStyleAttr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;androidx.appcompat.R.attr.editTextStyle<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="accessibility-text.html">accessibilityText</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">accessibilityText</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-date-valid.html">isDateValid</a></h4>
+</td>
+<td>
+<p>Is <code>true</code> if the text entered represents a valid expiry date that has not
+yet passed, and <code>false</code> if not.</p>
+<code><span class="keyword">var </span><span class="identifier">isDateValid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="valid-date-fields.html">validDateFields</a></h4>
+</td>
+<td>
+<p>Gets the expiry date displayed on this control if it is valid, or <code>null</code> if it is not.
+The return value is given as a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a>, where the first entry is the two-digit month
+(from 01-12) and the second entry is the four-digit year (2017, not 17).</p>
+<code><span class="keyword">val </span><span class="identifier">validDateFields</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

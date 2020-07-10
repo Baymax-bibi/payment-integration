@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SetupIntent - stripe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">stripe</a>&nbsp;/&nbsp;<a href="../index.html">com.stripe.android.model</a>&nbsp;/&nbsp;<a href="./index.html">SetupIntent</a><br/>
+<br/>
+<h1>SetupIntent</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SetupIntent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-stripe-intent/index.html"><span class="identifier">StripeIntent</span></a></code>
+<p>A <a href="./index.html">SetupIntent</a> guides you through the process of setting up a customer's payment credentials for
+future payments.</p>
+<p>See the <a href="https://stripe.com/docs/api/setup_intents">API Reference for SetupIntents</a>
+for more information.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-cancellation-reason/index.html">CancellationReason</a></h4>
+</td>
+<td>
+<p>Reason for cancellation of a <a href="./index.html">SetupIntent</a>.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CancellationReason</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-error/index.html">Error</a></h4>
+</td>
+<td>
+<p>The error encountered in the previous <a href="./index.html">SetupIntent</a> confirmation.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Error</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-stripe-model/index.html"><span class="identifier">StripeModel</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cancellation-reason.html">cancellationReason</a></h4>
+</td>
+<td>
+<p>Reason for cancellation of this <a href="./index.html">SetupIntent</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">cancellationReason</span><span class="symbol">: </span><span class="identifier">CancellationReason</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="client-secret.html">clientSecret</a></h4>
+</td>
+<td>
+<p>The client secret of this SetupIntent. Used for client-side retrieval using a
+publishable key.</p>
+<code><span class="keyword">val </span><span class="identifier">clientSecret</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="created.html">created</a></h4>
+</td>
+<td>
+<p>Time at which the object was created. Measured in seconds since the Unix epoch.</p>
+<code><span class="keyword">val </span><span class="identifier">created</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="description.html">description</a></h4>
+</td>
+<td>
+<p>An arbitrary string attached to the object. Often useful for displaying to users.</p>
+<code><span class="keyword">val </span><span class="identifier">description</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<p>Unique identifier for the object.</p>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-live-mode.html">isLiveMode</a></h4>
+</td>
+<td>
+<p>Has the value <code>true</code> if the object exists in live mode or the value
+<code>false</code> if the object exists in test mode.</p>
+<code><span class="keyword">val </span><span class="identifier">isLiveMode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="last-setup-error.html">lastSetupError</a></h4>
+</td>
+<td>
+<p>The error encountered in the previous <a href="./index.html">SetupIntent</a> confirmation.</p>
+<code><span class="keyword">val </span><span class="identifier">lastSetupError</span><span class="symbol">: </span><span class="identifier">Error</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="next-action-data.html">nextActionData</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nextActionData</span><span class="symbol">: </span><span class="identifier">NextActionData</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="next-action-type.html">nextActionType</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nextActionType</span><span class="symbol">: </span><span class="identifier">NextActionType</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="payment-method.html">paymentMethod</a></h4>
+</td>
+<td>
+<p>The expanded <a href="../-payment-method/index.html">PaymentMethod</a> represented by <a href="payment-method-id.html">paymentMethodId</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">paymentMethod</span><span class="symbol">: </span><a href="../-payment-method/index.html"><span class="identifier">PaymentMethod</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="payment-method-id.html">paymentMethodId</a></h4>
+</td>
+<td>
+<p>ID of the payment method used with this <a href="./index.html">SetupIntent</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">paymentMethodId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="payment-method-types.html">paymentMethodTypes</a></h4>
+</td>
+<td>
+<p>The list of payment method types (e.g. card) that this <a href="./index.html">SetupIntent</a> is allowed to set up.</p>
+<code><span class="keyword">val </span><span class="identifier">paymentMethodTypes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="redirect-data.html">redirectData</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><s><span class="identifier">redirectData</span></s><span class="symbol">: </span><span class="identifier">RedirectData</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="redirect-url.html">redirectUrl</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><s><span class="identifier">redirectUrl</span></s><span class="symbol">: </span><a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="status.html">status</a></h4>
+</td>
+<td>
+<p><a href="https://stripe.com/docs/payments/intents#intent-statuses">Status</a> of this <a href="./index.html">SetupIntent</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">status</span><span class="symbol">: </span><span class="identifier">Status</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stripe-sdk-data.html">stripeSdkData</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><s><span class="identifier">stripeSdkData</span></s><span class="symbol">: </span><span class="identifier">SdkData</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="usage.html">usage</a></h4>
+</td>
+<td>
+<p>Indicates how the payment method is intended to be used in the future.</p>
+<code><span class="keyword">val </span><span class="identifier">usage</span><span class="symbol">: </span><span class="identifier">Usage</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="requires-action.html">requiresAction</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requiresAction</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="requires-confirmation.html">requiresConfirmation</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">requiresConfirmation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from-json.html">fromJson</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromJson</span><span class="symbol">(</span><span class="identifier" id="com.stripe.android.model.SetupIntent.Companion$fromJson(org.json.JSONObject)/jsonObject">jsonObject</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SetupIntent</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
